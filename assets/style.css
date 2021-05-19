@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Atma:wght@400;500;600&family=Chivo:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+    color: #FFF;
+}
+
+ul, li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+header{
+    height: 85px;
+}
+
+.header{
+    height: 120px;
+    background-color: rgba(177, 177, 177, 0.5);
+}
+
+.startpage{
+    background-image: url('../assets/images/bg-group1.png');
+    height: 1250px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.menu{
+    margin: auto;
+    max-width: 1140px;
+    height: 100%;
+    max-width: 1250px;
+    overflow-x: hidden;
+}
+
+.menu ul{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul img{
+    height: 70px;
+    transition: 1s;
+}
+
+.menu ul img:hover{
+    height: 75px;
+}
+
+.menu ul li{
+    width: 100%;
+}
+
+.menu li a{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li a:hover{
+    color: yellow;
+    transition: 1s;
+}
+
+.startpage-bg{
+    background-image: url('../assets/images/pratos.png');
+    background-position: center;
+    background-size: cover;
+    height: 91%;
+    overflow-x: hidden;
+}
+
+.startpage-info{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    align-items: flex-end;
+    margin-top: 220px;
+    margin-right: 140px;
+}
+
+.startpage-info img{
+    height: 140px;
+    width: 330px;
+}
+
+.startpage-info1,
+.startpage-info2{
+    text-align: end;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.startpage-info1 a{
+    text-decoration: none;
+    font-size: 30px;
+    color: yellow;
+    line-height: 70px;
+}
+
+.startpage-info2{
+    font-size: 50px;
+}
+
+.startpage-info2 span{
+    color: yellow;
+}
+
+.about{
+    background-image: url('../assets/images/bg-group2.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about-info{
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.about-info h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about-info span{
+    text-transform: initial;
+    font-family: 'Atma', sans-serif;
+    font-weight: 400;
+}
+
+.about-info p{
+    font-family: 'Overpass',sans-serif;
+    margin-top: 120px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.about-info h2{
+    font-size: 25px;
+    margin-top: 120px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+}
+
+.about-info h2 span{
+    font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    color: yellow;
+}
+
