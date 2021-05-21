@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Atma:wght@400;500;600&family=Chivo:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300&family=Atma:wght@400;500;600&family=Chivo:wght@300;400;700&display=swap');
 
 *{
     margin: 0;
@@ -15,17 +15,17 @@ ul, li{
 }
 
 header{
-    height: 85px;
+    height: 40px;
 }
 
 .header{
-    height: 120px;
+    height: 60px;
     background-color: rgba(177, 177, 177, 0.5);
 }
 
 .startpage{
     background-image: url('../assets/images/bg-group1.png');
-    height: 1250px;
+    height: 900px;
     width: 100%;
     overflow-x: hidden;
 }
@@ -47,12 +47,12 @@ header{
 }
 
 .menu ul img{
-    height: 70px;
+    height: 40px;
     transition: 1s;
 }
 
 .menu ul img:hover{
-    height: 75px;
+    height: 50px;
 }
 
 .menu ul li{
@@ -73,9 +73,9 @@ header{
 
 .startpage-bg{
     background-image: url('../assets/images/pratos.png');
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
-    height: 91%;
+    height: 90%;
     overflow-x: hidden;
 }
 
@@ -84,13 +84,14 @@ header{
     flex-direction: column;
     text-align: end;
     align-items: flex-end;
-    margin-top: 220px;
-    margin-right: 140px;
+    margin-top: 110px;
+    margin-right: 100px;
 }
 
 .startpage-info img{
     height: 140px;
     width: 330px;
+    margin-bottom: 90px;
 }
 
 .startpage-info1,
@@ -98,6 +99,10 @@ header{
     text-align: end;
     font-size: 40px;
     text-transform: uppercase;
+}
+
+.startpage-info1{
+    margin-bottom: 100px;;
 }
 
 .startpage-info1 a{
@@ -119,19 +124,22 @@ header{
     background-image: url('../assets/images/bg-group2.png');
     background-position: center;
     background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .about-info{
     align-items: center;
-    width: 50%;
+    width: 40%;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 90px;
+    padding-right: 10px;
 }
 
-.about-info h1{
+.about-info h1,
+.quality-area h1,
+.gallery h1,
+.book-area h1{
     text-transform: uppercase;
     font-weight: 400;
     font-size: 40px;
@@ -143,17 +151,22 @@ header{
     font-weight: 400;
 }
 
-.about-info p{
+.about-info p,
+.quality-area p{
     font-family: 'Overpass',sans-serif;
-    margin-top: 120px;
-    font-size: 18px;
+    color: #d4d4d4;
+    margin-top: 80px;
+    font-size: 15px;
     text-align: center;
     line-height: 30px;
 }
 
-.about-info h2{
-    font-size: 25px;
-    margin-top: 120px;
+.about-info h2,
+.quality-area h2,
+.quality-area h3,
+.book-area h2{
+    font-size: 20px;
+    margin-top: 80px;
     font-family: 'Overpass', sans-serif;
     font-weight: 300;
 }
@@ -164,3 +177,192 @@ header{
     color: yellow;
 }
 
+.quality{
+    background-image: url('../assets/images/bg-group3.png');
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.quality-area{
+    width: 60%;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding-left: 120px;
+    padding-right: 80px;
+}
+
+.quality-area h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.quality-area h3{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.quality-area h2 span{
+    font-size: 25px;
+    color: yellow;
+}
+
+.gallery{
+    background-image: url('../assets/images/bg-group1.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.gallery-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5fr 2.5fr 2.5fr 5fr 3fr ;
+    grid-gap: 20px;
+    max-width: 1200px;
+    max-height: 900px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.gallery-area > div:nth-child(1){
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.gallery-area > div:nth-child(2){
+    grid-column: 1;
+    grid-row: 3 / 6;
+}
+
+.gallery-area > div:nth-child(3){
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gallery-area > div:nth-child(4){
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+.gallery-area > div:nth-child(5){
+    grid-column: 2;
+    grid-row: 4 / 6;
+}
+
+.gallery-area > div:nth-child(6){
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.gallery-area > div:nth-child(7){
+    grid-column: 3;
+    grid-row: 2 / 6;
+}
+
+.gallery-area > div:nth-child(n + 1){
+    border: 1px solid yellow;
+}
+
+.gallery-area--img img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.book{
+    background-image: url('../assets/images/bg-group5.png');
+    padding-bottom: 50px;
+}
+
+.book-area{
+    padding-top: 80px;
+    max-width: 1150px;
+    text-align: center;
+    margin: auto;
+}
+
+.book-area h1{
+    padding-bottom: 40px;
+}
+
+.book-area h2{
+    margin-top: 0;
+    font-size: 35px;
+    font-weight: 200;
+    padding-bottom: 40px;
+}
+
+.form{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    text-align: start;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.form-part1,
+.form-part2{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-part1{
+    margin-right: 70px;
+}
+
+.form-part2{
+    margin-left: 70px;
+}
+
+.form input, .input{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #999;
+}
+
+form .button{
+    display: block;
+    background-color: #ffc901;
+    width: 200px;
+    height: 40px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+option{
+    background-color: #484848;
+}
+
+.group6{
+    background-image: url('../assets/images/bg-group6.png');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+}
