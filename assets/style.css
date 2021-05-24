@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300&family=Atma:wght@400;500;600&family=Chivo:wght@300;400;700&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +28,10 @@ header{
     height: 900px;
     width: 100%;
     overflow-x: hidden;
+}
+
+.menu-ipad{
+    display: none;
 }
 
 .menu{
@@ -220,6 +224,8 @@ header{
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .gallery-area{
@@ -365,4 +371,378 @@ option{
     background-position: center;
     background-size: cover;
     height: 900px;
+}
+
+.testimony{
+    background-image: url("../assets/images/bg-group7.png");
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.testimony-area{
+    max-width: 1150px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimony-area h1{
+    font-family: 'Chivo';
+    font-weight: 700;
+    display: block;
+    font-size: 70px;
+    color: yellow;
+}
+
+.testimony-area p{
+    font-family: 'Overpass';
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-right: 200px;
+    padding-left: 200px;
+    line-height: 30px;
+}
+
+.testimony-area h2{
+    font-family: 'Overpass';
+    font-size: 25px;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+footer{
+    background-color: #1c1c1c;
+}
+
+.contactus-area{
+    background-image: url('../assets/images/bg-group9.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    border-bottom: 5px dotted yellow;
+}
+
+.contactus{
+    text-align: center;
+    width: 30%;
+    text-align: start;
+    margin-left: 120px;
+}
+
+.contactus h1{
+    text-align: center;
+    font-family: 'Chivo';
+    font-weight: 200;
+    display: block;
+    font-size: 35px;
+    color: yellow;
+    margin-bottom: 40px;
+}
+
+.contactus p{
+    text-align: center;
+    font-family: 'Overpass';
+    font-weight: 200;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contactus h2{
+    font-family: 'Overpass';
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 30px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.social img{
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.social-menu{
+    display: flex;
+    margin: auto;
+    height: 100%;
+    max-width: 800px;
+    overflow-x: hidden;
+}
+
+.social-menu ul{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.social-menu li{
+    margin-right: 50px;
+}
+
+.social-menu li a{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.social-redes{
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.social-redes i{
+        background-color: #FFF;
+        color: #1c1c1c;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: background-color 1s;
+        margin-right: 15px;
+}
+
+.social-media i:hover {
+    background-color: #a044ff;
+}
+
+@media (min-width:450px) and (max-width: 800px){
+    .menu{
+        display: none;
+    }
+
+    .menu-ipad{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-ipad-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        margin-left: 40px;
+    }
+
+    .menu-ipad img{
+        height: 100%;
+    }
+
+    .menu-ipad-hamburguer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+    .menu-ipad-hamburguer-line{
+        width: 30px;
+        height: 4px;
+        background-color: #FFF;
+        border: solid 1px #FFF;
+        margin-bottom: 3px;
+        border-radius: 20px;
+    }
+
+    .startpage-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-info{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .quality{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quality-area{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+
+    .form .form-part1{
+        margin: 0px;
+    }
+    
+    .form .form-part2{
+        margin: 0px;
+    }
+
+    .testimony p{
+        margin: 0 auto;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .contactus{
+        width: initial;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .social-menu li {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+}
+
+@media (max-width:455px){
+    .menu{
+        display: none;
+    }
+
+    .menu-ipad{
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-ipad-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        margin-left: 40px;
+    }
+
+    .menu-ipad img{
+        height: 100%;
+    }
+
+    .menu-ipad-hamburguer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right: 40px;
+    }
+
+    .menu-ipad-hamburguer-line{
+        width: 30px;
+        height: 4px;
+        background-color: #FFF;
+        border: solid 1px #FFF;
+        margin-bottom: 3px;
+        border-radius: 20px;
+    }
+
+    .startpage-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: initial;
+        margin: 20px;
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-info{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .quality{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quality-area{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+
+    .form .form-part1{
+        margin: 0px;
+    }
+    
+    .form .form-part2{
+        margin: 0px;
+    }
+
+    .group6{
+        display: none;
+    }
+
+    .testimony p{
+        margin: 0 auto;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .contactus{
+        width: initial;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .social-menu {
+        display: none;
+    }
 }
