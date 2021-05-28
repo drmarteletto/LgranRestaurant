@@ -526,10 +526,40 @@ footer{
 
 @media (min-width:450px) and (max-width: 800px){
     .menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0;
+        background-color:rgba(0, 0, 0, 0.9);
+        transition: 1s;
+    }
+
+    .menu-opened{
+        width: 50%;
+    }
+
+    .menu ul{
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li a{
+        font-size: 50px;
+        line-height: 130px;
+    }
+
+    #menu-img{
         display: none;
     }
 
     .menu-ipad{
+        height: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -547,15 +577,20 @@ footer{
     }
 
     .menu-ipad-hamburguer{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        margin-right: 40px;
+        position: fixed;
+        top: 57px;
+        right: 35px;
         cursor: pointer;
+        z-index: 100;
+        transition: all 1s;
+    }
+
+    .menu-ipad-hamburguer-opened{
+        margin-right: 280px;
     }
 
     .menu-ipad-hamburguer-line{
+        margin-left: 0;
         width: 30px;
         height: 4px;
         background-color: #FFF;
@@ -636,6 +671,35 @@ footer{
 
 @media (max-width:455px){
     .menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0;
+        background-color:rgba(0, 0, 0, 0.9);
+        transition: all ease 1s;
+    }
+
+    .menu-opened{
+        width: 100vw;
+    }
+
+    .menu ul{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li a{
+        font-size: 35px;
+        line-height: 95px;
+    }
+
+    #menu-img{
         display: none;
     }
 
@@ -658,11 +722,16 @@ footer{
     }
 
     .menu-ipad-hamburguer{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        margin-right: 40px;
+        position: fixed;
+        top: 60px;
+        right: 35px;
+        cursor: pointer;
+        z-index: 100;
+        transition: all 1s;
+    }
+
+    .menu-ipad-hamburguer-opened{
+        margin-right: 280px;
     }
 
     .menu-ipad-hamburguer-line{
